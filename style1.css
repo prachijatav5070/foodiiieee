@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* -----hero section--------- */
+
+.hero {
+     background : url(home_back.jpg) no-repeat center center /cover;
+    height: 100vh;   
+    display: flex;
+    
+    
+}
+.hero .navbar ul li{
+    list-style: none;
+}
+.hero .navbar ul li a{
+    
+    text-decoration: none;
+    font-size: 20px; 
+    color: aliceblue;
+}
+.hero .navbar ul li a:hover {
+    background-color: rgb(000);
+    border-bottom: 4px solid green;
+}
+.hero .navbar {
+    
+    width: 99%;
+    height: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0);
+
+}
+.navbar {
+    position: fixed;
+}
+.hero .logo a{ 
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.navbar span{
+    color: aqua;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .navbar h3 {
+    font-size: 30px;
+    color: beige;
+
+}
+
+/* overlay */
+.hero::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hero *{
+    z-index: 100;
+} 
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    font-size: 35px;
+}
+
+
+/* ----------about section----------- */
+
+.about-section{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    background-color: black;
+    margin: 2px;
+    gap: 30px;
+    color:gray;
+    padding: 40px;
+    
+}
+.about-section div img{
+    width: 100%;
+    height: 90%
+    
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.about-section .about-content h1{
+color: bisque;
+font-size: 50px;
+margin: 10px;
+font-style: italic;
+}
+.about-section .about-content a {
+    font-size: 20px;
+    border: 2px solid red;
+    text-decoration: none;
+
+    color: white;
+    padding: 20px;
+}
+.about-section .about-content p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* -----------menu section--------- */
+
+
+
+.menu-container {
+    
+    background-color: black;
+    color: aliceblue;
+    padding: 40px;
+}
+.menu-container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.menu-container .text h1{
+    font-size: 30px;
+    color:white;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    text-transform: capitalize;
+    padding: 15px;
+}
+.menu-container .parent .box img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.menu-container .text p{
+    font-size: 20px;
+    margin: 15px;
+    color: gray;
+
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+ }
+ 
+.parent .box1{
+    align-items: start;
+    justify-content: start;
+    
+}
+.parent .box h3 {
+    color: yellow;
+    font-size: 30px;
+    font-style: italic;
+    
+}
+.parent .box p {
+    color: gray;
+    
+}
+.parent .box1 h3 {
+    color: yellow;
+    font-size: 30px;
+    font-style: italic;
+    margin: 20px;
+}
+.parent .box1 p {
+    color: gray;
+    gap: 80px;
+}
+
+
+
+
+/* -----------------gallery--------------- */
+
+.main-gallery {
+    
+    margin: auto ;
+    text-align: center ;
+    margin-bottom: 10px;
+    background-color: bisque;
+    padding: 20px;
+}
+.main-gallery .gallery-title{
+    text-transform: capitalize;
+    font-size: 30px;
+    position: relative;
+}
+.main-gallery .gallery-title p{
+    margin: 30px;
+}
+.main-gallery .gallery-title h2{
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery-column {
+    width: 30%;
+}
+.gallery h4{
+ text-transform: capitalize;
+ font-size: 20px;
+ margin-bottom: 25px;
+}
+.single-gallery{
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.single-gallery img {
+    border-radius: 50%;
+    max-width: 110px;
+    border: 1px dashed;
+    padding: 3px;
+    margin-right: 20px;
+    transition: .3s;
+
+}
+.single-gallery:hover img{
+    transform: rotate(360deg);
+}
+.single-gallery .gallery-content h5{
+    text-transform: capitalize;
+    font-size: 20px;
+    border: 2px dashed;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.single-gallery .gallery-content h5 span{
+    color: tomato;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Event section */
+.ev{
+    background-color: black; 
+     padding: 40px;
+ }
+ .ev-content {
+     text-align: center;
+     margin: 10px;
+ }
+ .ev-content h2 {
+     font-size: 30px;
+     margin: 10px;
+     border: 1px solid white;
+     color: aqua;
+ }
+ .ev-content p {
+     font-size: 20px;
+     color: gray;
+     text-align: center;
+ }
+ .ev-p-box{
+     color: white;
+     display: flex; 
+     flex-direction: row;
+     gap: 40px;
+     margin: 20px;
+     padding: 20px;
+ 
+ }
+ .ev-box  img {
+     width: 200px;
+     height: 200px;
+     margin: 20px;
+     
+ }
+ .ev-box h4 {
+     font-weight: 20px;
+     font-size: 25px;
+     color: brown;
+     margin: 20px;
+ }
+ .ev-box a {
+     text-decoration: none;
+     font-size: 20px;
+     color: rgb(163, 163, 197);
+ }
+ #B {
+     color: rgb(217, 202, 202);
+     background-color: black;
+ }
+  .ev-box  {
+     border: 2px solid white;
+     text-align: center;
+     margin: 20px;}
+
+     .ev .AB{
+        display: flex;
+        justify-content: space-between;
+       
+     }
+ 
+
+     /* ---------------reservation secti on-------------- */
+.reservation-section  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 10px;
+    
+}
+
+ .re-content h2
+ {
+    font-size: 30px;
+    background-color: rgb(92, 132, 167);
+    color: black;
+    margin: 10px;
+    
+}
+  .re-content p {
+   
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+}
+ .reservation-section  form {
+    
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ }
+ .reservation-section  form input {
+    width: 350px;
+    height: 40px;
+}
+.re-content a {
+    font-size: 50px;
+    color: brown; 
+    
+}
+.re-content p{
+    margin: 20px;
+}
+
+button {
+    border: 2px solid red;
+    font-size: 17px;
+    margin: 10px;
+    color: black;
+    padding: 10px;
+
+}
+
+
+/* ----------footer section ------------ */
+
+.footer .container1 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+ background-color: black;
+    gap: 60px;
+    color: aliceblue;
+    padding: 40px;
+}
+.container1 .footer-content h3{
+font-size: 20px;
+margin: 20px;
+
+}
+.container1 .footer-content p {
+    color: gray;
+}
+
+.container1 .footer-content ul li{
+    list-style: none;
+    margin: 10px;
+    
+}
+.container1 .footer-content ul li a{
+    color: aqua;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(154, 37, 37);
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+
+    
+}
+ .footer .footer-end a {
+    font-size: 30px;
+      margin: 20px;
+}
+* button:hover {
+    background-color: rgb(000);
+    border-bottom: 4px solid green;
+    color: darkcyan
+    }
+
+
+
+
+
+    /* tablet view */
+
+
+@media  screen  and (max-width:768px)
+ {
+    .hero{
+        flex-direction: column;
+      
+    }
+    .hero .navbar  {
+    flex-direction: column;
+    }
+    .menu-section .parent
+    {
+       flex-direction: column;
+       gap: 10px;
+    }
+
+    .ev-p-box{
+        flex-direction: column;
+     }
+     .ev-p-box .ev-box {
+        display: flex;
+        flex-direction: column;
+        
+     }
+    .about-section{
+        flex-direction: column;
+         
+    }
+    .about-section .content{
+        flex-direction: column;
+    }
+    .menu-container .text {
+    flex-direction: column; }
+    
+    .reservation-section {
+        flex-direction: column;
+    }
+    .main-gallery .gallery{
+        flex-wrap: wrap;
+    }
+
+    .footer .container1 {
+        display: grid;
+    
+    
+    }
+    
+    .footer .footer-end {
+        flex-direction: column;
+    }
+
+} 
+
+  /* mobile view */
+
+
+  @media  screen  and (max-width:425px)
+  
+     {
+     
+        .hero {
+            flex-direction: column;
+        }
+    .hero .navbar {
+         flex-direction: column;
+     }
+     .hero .hero-content h1
+     {
+        font-size: 30px;
+        margin: 30px;
+     }
+
+     .ev-p-box{
+        flex-direction: column;
+     }
+     .ev-p-box .ev-box {
+        display: grid;
+     }
+     .about-section{
+         flex-direction: column;
+         
+         
+     }
+     
+     .about-section .content{
+         flex-direction: column;
+         
+     }
+     .menu-container .text {
+     flex-direction: column; }
+     .menu-section .parent
+     {
+        flex-direction: column;
+        gap: 10px;
+     }
+     .reservation-section  {
+         flex-direction: column;
+         
+     }
+     .main-gallery .gallery{
+        flex-wrap: wrap;
+    }
+
+     .main-gallery .gallery{
+         flex-wrap: wrap;
+         flex-direction: column;
+     }
+     .footer .container1 {
+         
+         flex-direction: column;
+     }
+     
+     .footer .footer-end {
+         flex-direction: column;
+         
+     }
+     
+ 
+ 
+ } 
+     
+     
+     
